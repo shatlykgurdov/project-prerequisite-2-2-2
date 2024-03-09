@@ -9,15 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05d969b4-84c3-4f0c-b78b-c77688463b6f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/web/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/config/WebConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/web/controller/CarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/controller/CarController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/web/model/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/model/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/web/service/CarService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/service/CarService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/webapp/WEB-INF/pages/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/pages/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="05d969b4-84c3-4f0c-b78b-c77688463b6f" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -161,7 +153,7 @@
       <option name="presentableId" value="Default" />
       <updated>1709962415173</updated>
       <workItem from="1709962419110" duration="218000" />
-      <workItem from="1709962865404" duration="8155000" />
+      <workItem from="1709962865404" duration="8639000" />
     </task>
     <servers />
   </component>
