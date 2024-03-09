@@ -25,7 +25,6 @@ public class WebConfig implements WebMvcConfigurer {
 
 
     @Bean
-    @Lazy
     public SpringResourceTemplateResolver templateResolver() {
         SpringResourceTemplateResolver templateResolver = new SpringResourceTemplateResolver();
         templateResolver.setApplicationContext(applicationContext);
@@ -35,7 +34,6 @@ public class WebConfig implements WebMvcConfigurer {
     }
 
     @Bean
-    @Lazy
     public SpringTemplateEngine templateEngine() {
         SpringTemplateEngine templateEngine = new SpringTemplateEngine();
         templateEngine.setTemplateResolver(templateResolver());

@@ -9,22 +9,22 @@ import java.util.List;
 @Service
 public class CarService {
 
-    public List<Car> cars;
+    public List<Car> carList;
 
     public CarService() {
-        cars = new ArrayList<>();
-        cars.add(new Car("Toyota", "Camry", 2020));
-        cars.add(new Car("Honda", "Civic", 2019));
-        cars.add(new Car("Ford", "Fusion", 2018));
-        cars.add(new Car("Chevrolet", "Malibu", 2017));
-        cars.add(new Car("Nissan", "Altima", 2016));
+        carList = new ArrayList<>();
+        carList.add(new Car("Toyota", "Camry", 2020));
+        carList.add(new Car("Honda", "Civic", 2019));
+        carList.add(new Car("Ford", "Fusion", 2018));
+        carList.add(new Car("Chevrolet", "Malibu", 2017));
+        carList.add(new Car("Nissan", "Altima", 2016));
     }
 
     public List<Car> getCars(int count) {
-        if (count >= cars.size()) {
-            return cars;
+        if (count >= carList.size()) {
+            return carList;
         } else {
-            return cars.subList(0, count);
+            return carList.subList(0, count);
         }
     }
 
