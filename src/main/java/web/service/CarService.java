@@ -21,10 +21,11 @@ public class CarService {
     }
 
     public List<Car> getCars(int count) {
-        if (count >= cars.size() || count <= 0) {
-            return cars;
-        } else {
             return cars.subList(0, count);
-        }
     }
+
+    public List<Car> getAllCars() {
+        return cars;
+    }
+
 }
