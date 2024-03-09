@@ -9,7 +9,7 @@ import java.util.List;
 @Service
 public class CarService {
 
-    private List<Car> cars;
+    public final List<Car> cars;
 
     public CarService() {
         cars = new ArrayList<>();
