@@ -1,12 +1,10 @@
 package web.dao;
 
 import web.model.User;
-import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
-import javax.persistence.TypedQuery;
 import java.util.List;
 
 @Repository
@@ -40,18 +38,18 @@ public class UserDaoImpl implements UserDao {
     }
 
     @Override
-    public void updateUserById(Long id, String newFirstName, String newLastName, String newEmail) {
+    public void updateUserById(Long id, String newFirstName, String newLastName, int newAge) {
         entityManager.getTransaction().begin();
         User userToUpdate = entityManager.find(User.class, id);
         userToUpdate.setFirstName(newFirstName);
         userToUpdate.setLastName(newLastName);
-        userToUpdate.setEmail(newEmail);
-        String updateQuery = "UPDATE User SET firstName = :newFirstName, lastName = :newLastName, email = :newEmail WHERE id = :id";
+        userToUpdate.setAge(newAge);
+        String updateQuery = "UPDATE User SET firstName = :newFirstName, lastName = :newLastName, age = :newAge WHERE id = :id";
         entityManager.createQuery(updateQuery)
                 .setParameter("id", id)
                 .setParameter("newFirstName", userToUpdate.getFirstName())
                 .setParameter("newLastName", userToUpdate.getLastName())
-                .setParameter("newEmail", userToUpdate.getEmail())
+                .setParameter("newAge", userToUpdate.getAge())
                 .executeUpdate();
         entityManager.getTransaction().commit();
     }

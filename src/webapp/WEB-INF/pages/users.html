@@ -32,8 +32,8 @@
     <label for="lastName">Last Name</label><br>
     <input type="text" th:field="*{lastName}">
     <br>
-    <label for="email">Email</label><br>
-    <input type="email" th:field="*{email}">
+    <label for="age">Age</label><br>
+    <input type="text" th:field="*{age}">
     <br><br>
     <button type="submit">Add User</button>
 </form>
@@ -47,7 +47,7 @@
         <th>ID</th>
         <th>FirstName</th>
         <th>LastName</th>
-        <th>Email</th>
+        <th>Age</th>
         <th>Edit</th>
         <th>Delete</th>
     </tr>
@@ -57,7 +57,7 @@
         <td th:text="${user.id}"></td>
         <td th:text="${user.firstName}"></td>
         <td th:text="${user.lastName}"></td>
-        <td th:text="${user.email}"></td>
+        <td th:text="${user.age}"></td>
         <td><a th:href="@{/edit(id=${user.id})}">Edit</a></td>
         <td><a th:href="@{/delete(id=${user.id})}">Delete</a></td>
     </tr>

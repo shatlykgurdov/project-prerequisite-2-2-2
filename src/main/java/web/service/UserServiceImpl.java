@@ -30,8 +30,8 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public void updateUserById(Long id, String firstName, String lastName, String email) {
-        userDao.updateUserById(id, firstName, lastName, email);
+    public void updateUserById(Long id, String firstName, String lastName, int age) {
+        userDao.updateUserById(id, firstName, lastName, age);
     }
 
     @Override
