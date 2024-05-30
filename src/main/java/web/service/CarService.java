@@ -9,7 +9,7 @@ import java.util.List;
 @Service
 public class CarService {
 
-    public List<Car> carList;
+    private final List<Car> carList;
 
     public CarService() {
         carList = new ArrayList<>();
@@ -21,12 +21,13 @@ public class CarService {
     }
 
     public List<Car> getCars(int count) {
+        if (count <= 0) {
+            return new ArrayList<>();
+        }
         if (count >= carList.size()) {
-            return carList;
+            return new ArrayList<>(carList);
         } else {
-            return carList.subList(0, count);
+            return new ArrayList<>(carList.subList(0, count));
         }
     }
-
-
 }
